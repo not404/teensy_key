@@ -1,0 +1,37 @@
+Teensy Key
+----------
+This project started out as a simple demonstration of the Teensy++ 2.0's 
+USB HID capabilities, and has turned out to be a uniquely useful tool.
+
+The Teensy Key project emulates a USB Keyboard and enters a string (with 
+newline) after a pre-determined delay. 
+
+The intended purpose is to provide the one-time Disk Encryption Key for Linux 
+Systems that use Full Disk Encryption, in order to allow the machines to 
+restart without user intervention.
+
+Background
+----------
+
+I personally use Full Disk Encryption on my Linux machines, especially laptops
+that I carry to on-site projects. Other machines are "loaners" I leave on-site
+to handle things like Samba Shares, Backups, and RSync file synchronizations.
+
+One unfortunate side-effect of using Full Disk Encryption is that someone 
+must be at the system console at boot time to enter the password to get 
+the machine started from a fresh reboot.
+
+Avoiding Reboots can be a problem for Loaner PCs, if power is ever cut,
+or some other reason forces the machine to reboot.  Without high-end tools
+to provide remote console access, there's no easy way to enter the password
+without having someone go to the console and type it in.
+
+With a Teensy++ 2.0 loaded with this program (and the correct password), you
+can wire it up to a USB port inside the box, and nobody would be the wiser.
+
+At best, this quick project makes for an EASY stop-gap solution for an 
+otherwise difficult problem.
+
+Have Fun!
+Laurence Lee
+
